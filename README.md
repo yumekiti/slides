@@ -3,7 +3,7 @@
 - Repository - source files
   - [https://github.com/yumekiti/slides](https://github.com/yumekiti/slides)
 - Github Pages - Presentation Mode
-  - [https://pages.github.com/yumekiti/slides/](https://pages.github.com/yumekiti/slides/)
+  - [https://yumekiti.github.io/slides/](https://yumekiti.github.io/slides/)
 
 ## Slides List
 
