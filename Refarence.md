@@ -4,7 +4,7 @@
 Generate Slides
 
 ```bash
-DIR=./umbrella/KO/
+DIR=./example/JA/
 docker run --rm -v $PWD:/home/marp/app/ -e LANG=$LANG -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli $DIR/README.md --theme ./style.css -o $DIR/index.html
 ```
 
@@ -14,11 +14,15 @@ node
 docker run -it --rm -v $PWD:/usr/src/app -w /usr/src/app node:22-alpine /bin/sh
 ```
 
+python
+
+```bash
+docker run -it --rm -v $PWD:/usr/src/app -w /usr/src/app python:3.12-slim /bin/sh
+```
+
 Setup Python environment
 
 ```bash
-python3 -m venv path/to/venv
-source path/to/venv/bin/activate
 pip3 install pillow
 ```
 
