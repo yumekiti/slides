@@ -22,8 +22,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  background-color: #00003e;
+  color: #00003e;
+  background-color: white;
 }
 :root.title-slide-big::after {
   content: "" !important;
