@@ -2,7 +2,7 @@
 marp: true
 title: サンプルスライド
 paginate: true
-theme: ly-unofficial
+theme: custom
 ---
 
 # サンプルスライド
@@ -32,7 +32,7 @@ _class: agenda
 ### 概要
 
 このディレクトリは、新しいスライドを作成する際のベースとして利用できるサンプルです。
-`umbrella/JA` の構成を参考に、Marp + `style.css`（`ly-unofficial` テーマ）で
+`umbrella/JA` の構成を参考に、Marp + `style.css`（`custom` テーマ）で
 共通して使えるレイアウトパターンをまとめています。
 
 コピーして中身を書き換えるだけで、新しいスライドをすぐに作成できます。
