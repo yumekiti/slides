@@ -7,6 +7,7 @@
   font-family: 'Noto Sans JP', sans-serif;
   color: #00003e;
   background-color: white;
+  background-image: none;
   font-size: 100%;
 }
 :root::after {
