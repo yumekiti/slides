@@ -9,5 +9,4 @@
 
 | Name                       | Created Date |
 | :------------------------- | :----------- |
-| [umbrella](./umbrella/JA/) | 2026-01-27   |
 | [example](./example/JA/)   | 2026-09-13   |
