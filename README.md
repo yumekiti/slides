@@ -1,9 +1,9 @@
 # Slides
 
 - Repository - source files
-  - [https://ghe.corp.yahoo.co.jp/corpinfra-network/slides](https://ghe.corp.yahoo.co.jp/corpinfra-network/slides)
+  - [https://github.com/yumekiti/slides](https://github.com/yumekiti/slides)
 - Github Pages - Presentation Mode
-  - [https://pages.ghe.corp.yahoo.co.jp/corpinfra-network/slides/](https://pages.ghe.corp.yahoo.co.jp/corpinfra-network/slides/)
+  - [https://pages.github.com/yumekiti/slides/](https://pages.github.com/yumekiti/slides/)
 
 ## Slides List
 
