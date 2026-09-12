@@ -1,0 +1,142 @@
+/* @theme ly-unofficial */
+
+@import "gaia";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+
+:root {
+  /* font-family: "LINE Seed JP_OTF", sans-serif; */
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #00003e;
+  background-color: white;
+  background-image: url("https://pages.ghe.corp.yahoo.co.jp/mharaoka/marp-template/ly-unofficial-bg.svg");
+  background-size: cover;
+  font-size: 100%;
+}
+:root::after {
+  font-size: 38%;
+  color: white;
+  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+}
+
+:root.title-slide-big {
+  background-color: white;
+  background-image: url("https://pages.ghe.corp.yahoo.co.jp/mharaoka/marp-template/ly-unofficial-bg-big.svg");
+  background-size: cover;
+}
+:root.title-slide-big::after {
+  content: "" !important;
+}
+
+:root.content-slide-gray {
+  background-color: white;
+  background-image: url("https://pages.ghe.corp.yahoo.co.jp/mharaoka/marp-template/ly-unofficial-bg-gray.svg");
+  background-size: cover;
+}
+:root.content-slide-gray::after {
+  font-size: 50%;
+  color: #aaaaaa !important;
+  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+}
+
+section :is(h1, h2, h3, h4, h5, h6) {
+  font-kerning: normal;
+
+  text-align: left;
+  text-wrap: pretty;
+}
+
+section[lang="ja"] :is(h1, h2, h3, h4, h5, h6) {
+  font-feature-settings: "palt";
+  word-break: auto-phrase;
+}
+
+section[lang="ja"] :not(h1, h2, h3, h4, h5, h6) {
+  font-kerning: none;
+}
+
+section[lang="en"] :not(h1, h2, h3, h4, h5, h6) {
+  font-kerning: normal;
+  text-wrap: pretty;
+}
+
+.columns {
+  display: grid;
+  width: 100%;
+  gap: 2em;
+}
+
+/* 6:4 */
+.columns.ratio-6-4 {
+  grid-template-columns: 6fr 4fr;
+}
+
+/* 5:5 */
+.columns.ratio-5-5 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5em;
+  padding: 1em 1.5em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 1em 0;
+}
+
+pre.mermaid {
+  text-align: center;
+  background-color: transparent;
+}
+
+section.agenda li {
+  line-height: 2.5em;
+}
+
+section > blockquote {
+  background-color: #f0f0f0;
+  border-left: 0.5em solid #cccccc;
+  padding: 1em 2em;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  padding: 1em 0;
+}
+
+section code {
+  padding: 0.2em 0.4em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 90%;
+  color: #1f2937;
+}
+
+section table th,
+section table td {
+  padding: 4px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: left;
+  vertical-align: top;
+}
+
+section table thead th {
+  background: #e5e7eb;
+  font-weight: 700;
+  color: #111827;
+  border-bottom: 2px solid #9ca3af;
+}
+
+section table tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
