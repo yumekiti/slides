@@ -4,33 +4,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
 
 :root {
-  /* font-family: "LINE Seed JP_OTF", sans-serif; */
   font-family: 'Noto Sans JP', sans-serif;
   color: #00003e;
   background-color: white;
-  background-image: url("https://pages.ghe.corp.yahoo.co.jp/mharaoka/marp-template/ly-unofficial-bg.svg");
-  background-size: cover;
   font-size: 100%;
 }
 :root::after {
   font-size: 38%;
-  color: white;
+  color: #00003e;
   content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
 }
 
+/* 表紙用: 中央寄せの大きめタイトルレイアウト */
 :root.title-slide-big {
-  background-color: white;
-  background-image: url("https://pages.ghe.corp.yahoo.co.jp/mharaoka/marp-template/ly-unofficial-bg-big.svg");
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #00003e;
 }
 :root.title-slide-big::after {
   content: "" !important;
 }
 
+/* 本文用: グレー背景のコンテンツレイアウト */
 :root.content-slide-gray {
-  background-color: white;
-  background-image: url("https://pages.ghe.corp.yahoo.co.jp/mharaoka/marp-template/ly-unofficial-bg-gray.svg");
-  background-size: cover;
+  background-color: #f5f5f5;
 }
 :root.content-slide-gray::after {
   font-size: 50%;
